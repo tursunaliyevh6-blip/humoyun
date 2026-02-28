@@ -1,0 +1,441 @@
+@import "tailwindcss";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.home {
+  background: #F8FAFC;
+  min-height: 100vh;
+}
+
+
+
+.navbar {
+  background: linear-gradient(90deg, #0F172A, #1E293B);
+  color: #FFFFFF;
+  padding: 20px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1E293B;
+  padding: 5px 15px;
+  width: 650px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.search:hover {
+  box-shadow: 0 0 15px rgba(92, 0, 184, 0.5);
+}
+
+.searchs {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: white;
+}
+
+.qidiruv {
+  color: #94A3B8;
+}
+
+
+
+.lang-select {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #7c3aed;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.menyu {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  border-radius: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  /* Animatsiya ichkarida qolishi uchun */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Hoverda tepaga ko'tarilishi */
+.menu-card:hover {
+  transform: translateY(-10px);
+  z-index: 10;
+  /* Boshqa narsalarning ustida ko'rinadi */
+  box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
+}
+
+/* Qorong'ulashtiruvchi qatlam */
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+  transition: opacity 0.3s;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s ease;
+  transform: translateY(20px);
+  /* Dastlab nomini pastga yashiramiz */
+}
+
+
+
+.menu-name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  opacity: 0;
+  /* Dastlab ko'rinmaydi */
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFEKTLARI */
+.menu-card:hover .menu-content {
+  transform: translateY(0);
+  /* Nomini tepaga chiqaramiz */
+}
+
+.menu-card:hover .menu-name {
+  opacity: 1;
+  /* Nomini ko'rsatamiz */
+}
+
+
+
+/* Mahsulotlar ro'yxati (qwerty) xalaqit bermasligi uchun */
+.qwerty {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.components {
+  margin: 50px auto;
+  width: 270px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.components:hover {
+  transform: translateY(-10px);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.qwerty {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 30px;
+  padding: 50px 150px;
+}
+
+.malumot {
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #0F172A;
+}
+
+p {
+  margin-top: 5px;
+  color: #64748B;
+}
+
+.N {
+  font-weight: bold;
+}
+
+.pul {
+  color: #5c00b8;
+  font-weight: bold;
+}
+
+.tugma {
+  margin-top: 15px;
+  width: 100%;
+  background: linear-gradient(135deg, #5c00b8, #7c3aed);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tugma:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(92, 0, 184, 0.5);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo h1 {
+  background: linear-gradient(135deg, #5c00b8, #7c3aed);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+
+.search:focus-within {
+  box-shadow: 0 0 20px rgba(92, 0, 184, 0.7);
+  border: 1px solid #5c00b8;
+}
+
+.lang-select {
+  transition: 0.3s;
+}
+
+.lang-select:hover {
+  box-shadow: 0 0 10px rgba(92, 0, 184, 0.7);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.login-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 17px;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.login-input:focus {
+  border: 1px solid #7c3aed;
+  box-shadow: 0 0 6px #7c3aed55;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #7c3aed;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #6d28d9;
+}
+
+.admin {
+
+  background: #f1f5f9;
+
+  min-height: 100vh;
+
+}
+
+
+.container {
+
+  padding: 40px;
+
+}
+
+
+.title {
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+}
+
+
+.table {
+
+  width: 100%;
+
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+th {
+
+  background: #0f172a;
+
+  color: white;
+
+  padding: 15px;
+
+  text-align: left;
+
+}
+
+
+td {
+
+  padding: 15px;
+
+  border-bottom: 1px solid #eee;
+
+}
+
+
+.status {
+
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 14px;
+
+}
+
+
+.status.Yangi {
+
+  background: blue;
+
+}
+
+
+.status.Jarayonda {
+
+  background: orange;
+
+}
+
+
+.status.Tugallangan {
+
+  background: green;
+
+}
+
+
+.delete {
+
+  background: red;
+
+  border: none;
+
+  color: white;
+
+  padding: 8px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+
+.in{
+  padding-top: 10px;
+}
+.inn{
+  padding-top: 10px;
+}
+
+
+
+.nav{
+  padding: 0 50px;
+}
+
+.qi{
+  padding:5px 0;
+  
+}
