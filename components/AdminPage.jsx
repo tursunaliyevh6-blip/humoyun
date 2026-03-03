@@ -15,16 +15,17 @@ export default function AdminPage() {
   const [newName, setNewName] = useState("");
   const [newImg, setNewImg] = useState(null);
   const [editingId, setEditingId] = useState(null);
-  const [deleteModal, setDeleteModal] = useState(false); // delete modal
+  const [deleteModal, setDeleteModal] = useState(false);
   const [deleteId, setDeleteId] = useState(null);
 
+  
   // Buyurtmalar uchun
   const [orders, setOrders] = useState([
     { id: "ORD001", items: ["Burger", "Fries"], total: "$12" },
     { id: "ORD002", items: ["Pizza", "Drink"], total: "$15" },
     { id: "ORD003", items: ["Burger", "Drink"], total: "$10" },
   ]);
-  const [expandedOrders, setExpandedOrders] = useState({}); // toggle
+  const [expandedOrders, setExpandedOrders] = useState({}); 
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];

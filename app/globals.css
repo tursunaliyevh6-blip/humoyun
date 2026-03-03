@@ -58,16 +58,6 @@
 
 
 
-.lang-select {
-  font-weight: 600;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 10px;
-  border: none;
-  background-color: #7c3aed;
-  color: white;
-  cursor: pointer;
-}
 
 
 
@@ -245,18 +235,10 @@ p {
   border: 1px solid #5c00b8;
 }
 
-.lang-select {
-  transition: 0.3s;
-}
-
-.lang-select:hover {
-  box-shadow: 0 0 10px rgba(92, 0, 184, 0.7);
-}
-
 .right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 
@@ -436,6 +418,8 @@ td {
 }
 
 .qi{
-  padding:5px 0;
-  
+  padding:5px 0;  
+}
+.qi1{
+  padding-left: 5px;
 }

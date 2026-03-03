@@ -6,14 +6,16 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
-  position: 'absolutes',
+  position: 'absolute', // "s" harfi olib tashlandi
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 420,
+  width: { xs: '90%', sm: 420 }, // Mobil qurilmalarda ekranga moslashadi
+  maxHeight: '90vh', // Ekrandan chiqib ketmasligi uchun
+  overflowY: 'auto', // Agar kontent sig'masa, skroll chiqadi
   bgcolor: 'white',
-  borderRadius: '24px', // Yumshoq burchaklar
-  boxShadow: '0px 20px 50px rgba(124, 58, 237, 0.15)', // Binafsha soya
+  borderRadius: '24px',
+  boxShadow: '0px 20px 50px rgba(124, 58, 237, 0.15)',
   p: 4,
   outline: 'none',
   border: '1px solid rgba(124, 58, 237, 0.1)'

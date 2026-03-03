@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { Menu, Search, User, Phone, MapPin, Headphones, ShoppingCart } from "lucide-react";
+import { Search, User, Phone, MapPin, Headphones, ShoppingCart } from "lucide-react";
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
@@ -38,14 +38,14 @@ const Navbarpage = ({ onSearch }) => {
             <div className="flex-1 flex justify-center max-w-3xl mx-4">
                    <div className="flex w-full border border-gray-300 rounded-full overflow-hidden shadow-sm qi">
                      
-                     <div className="flex items-center justify-center px-4 bg-gray-100 ">
-                       <Search className="text-gray-500" size={20} />
+                     <div className="flex items-center justify-center px-4 qi1">
+                       <Search className="text-gray-500 " size={20} />
                      </div>
                      
-                     <input
+                     <input 
                        type="text"
                        placeholder="Qidiruv..."
-                       className="flex-1 py-1 px-6 text-base focus:outline-none "
+                       className="flex-1 py-1 px-6 text-base focus:outline-none qi1"
                        style={{ paddingRight: "10px" }} 
                      />
                    </div>
@@ -53,12 +53,7 @@ const Navbarpage = ({ onSearch }) => {
 
 
                <div className="right">
-                <div className="lang-wrapper">
-                    <select className="lang-select">
-                        <option>Uzb</option>
-                        <option>Rus</option>
-                    </select>
-                </div>
+                
 
                 <User
                     size={34}
