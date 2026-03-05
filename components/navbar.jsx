@@ -35,6 +35,8 @@ const Navbarpage = ({ onSearch }) => {
                 <h1 className="text-2xl font-bold sabo">SABO</h1>
             </div>
         
+
+        
             <div className="flex-1 flex justify-center max-w-3xl mx-4">
                    <div className="flex w-full border border-gray-300 rounded-full overflow-hidden shadow-sm qi">
                      

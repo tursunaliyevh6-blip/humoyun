@@ -404,22 +404,46 @@ td {
 
 }
 
-.in{
-  padding-top: 10px;
-}
-.inn{
+.in {
   padding-top: 10px;
 }
 
+.inn {
+  padding-top: 10px;
+}
 
 
-.nav{
+
+.nav {
   padding: 0 50px;
 }
 
-.qi{
-  padding:5px 0;  
+.qi {
+  padding: 5px 0;
 }
-.qi1{
+
+.qi1 {
   padding-left: 5px;
+}
+
+.och {
+  color: #f60000;
+}
+
+.ya {
+  color: #6d28d9;
+}
+
+.amodal {
+  margin-top: 80px;
+}
+
+
+.categories {
+  padding: 60px 100px;
+}
+
+.categories .category {
+  overflow: hidden;
+  padding: 10px;
 }

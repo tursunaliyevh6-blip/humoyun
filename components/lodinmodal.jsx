@@ -47,7 +47,7 @@ export default function LoginModal({ open, handleClose }) {
         </button>
 
 
-        {/* ✅ YANGI QO‘SHILDI */}
+        
         <button
           onClick={goAdmin}
           className="login-btn"

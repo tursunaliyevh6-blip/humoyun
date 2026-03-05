@@ -37,7 +37,7 @@ const Homepage = () => {
 
             <ImageCarousel />
 
-            {/* KATEGORIYALAR BOLI'MI */}
+            {/* KATEGORIYALAR*/}
             <div className="menyu">
                 <div
                     className={`menu-card ${!selectedCategoryId ? "active-cat" : ""}`}
@@ -49,7 +49,7 @@ const Homepage = () => {
                     </div>
                 </div>
 
-                {/* API dan kelgan kategoriyalar */}
+                {/* kelgan kategoriyalar */}
                 {!catLoading && categories?.map((cat) => (
                     <div
                         key={cat.id}
@@ -67,6 +67,8 @@ const Homepage = () => {
                     </div>
                 ))}
             </div>
+
+
 
             {/* MAHSULOTLAR RO'YXATI */}
             <div className="qwerty">

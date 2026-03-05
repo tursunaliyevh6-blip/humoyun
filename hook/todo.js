@@ -6,7 +6,7 @@ const API_URL = "http://localhost:4000/api";
 //KATEGORIYALARNI OLISH
 const fetchCategories = async () => {
     const response = await axios.get(`${API_URL}/categories`);
-    return response.data.data; 
+    return response.data; 
 };
 
 export const useGetCategories = () => {
@@ -19,7 +19,7 @@ export const useGetCategories = () => {
 // MAXSULOTLARNI OLISH 
 const fetchFastfoods = async () => {
     const response = await axios.get(`${API_URL}/fastfoods`);
-    return response.data.data; 
+    return response.data; 
 };
 
 export const useGetFastfoods = () => {
